@@ -1,0 +1,816 @@
+@charset "UTF-8";
+/* sub_menu.html 디자인 영역 */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Shrikhand);
+#headBox > .head_wrap > #gnb, #titleArea, #lnb, #lnb > a:last-child, #theNeo > .con_box, #moonSet > .con_box, #sunSet > .con_box, #cheese > .con_box, #tel > .box_wrap > #orderNum, #tel > .box_wrap > #centerNum, #tel > .box_wrap > #marketNum, #info {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#wrap {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+#headBox {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(26, 26, 26, 0.8); }
+  #headBox > .head_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #headBox > .head_wrap > h1 {
+      width: 140px;
+      height: 94px;
+      float: left;
+      margin-top: 14px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+      #headBox > .head_wrap > h1 > a {
+        width: inherit;
+        height: 94px;
+        display: block; }
+    #headBox > .head_wrap > #gnb {
+      width: 768px;
+      height: 120px;
+      float: right;
+      padding: 40px 0; }
+      #headBox > .head_wrap > #gnb > ul {
+        width: 100%;
+        height: auto; }
+        #headBox > .head_wrap > #gnb > ul > li {
+          width: auto;
+          height: auto;
+          float: left;
+          margin-right: 20px; }
+        #headBox > .head_wrap > #gnb > ul > li > a {
+          display: block; }
+        #headBox > .head_wrap > #gnb > ul > li > a > span {
+          color: #fff;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-weight: bold;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif;
+          vertical-align: middle; }
+          #headBox > .head_wrap > #gnb > ul > li > a > span:hover {
+            color: #00a9e0;
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+        #headBox > .head_wrap > #gnb > ul > li:first-child > a > span {
+          color: #00a9e0; }
+        #headBox > .head_wrap > #gnb > ul > li:last-child {
+          margin-right: 0; }
+
+#adBanner {
+  width: 100%;
+  min-width: 960px;
+  height: 620px;
+  position: relative;
+  background-color: transparent;
+  background-image: url("../../img/pizza_submenu.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#titleArea {
+  width: 70%;
+  height: 500px;
+  position: absolute;
+  top: 120px;
+  padding: 300px 0 0 200px; }
+  #titleArea > .title {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 4.5rem;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+
+#container {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fdf6f6; }
+
+#container > .con_wrap {
+  width: 100%;
+  min-width: 960px;
+  height: 60px;
+  position: relative; }
+
+#lnb {
+  width: 960px;
+  height: inherit;
+  margin: 0 auto;
+  padding-top: 16px;
+  background-color: rgba(255, 255, 255, 0.4); }
+  #lnb.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -480px; }
+  #lnb:after {
+    content: " ";
+    display: block;
+    clear: both;
+    width: 100px;
+    height: 0; }
+
+#lnb > a {
+  padding: 16px 26px;
+  background-color: #00a9e0;
+  color: #fff;
+  font-size: 1.5rem;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+
+#lnb > a:last-child {
+  padding: 10px 20px;
+  margin-left: 300px;
+  background-color: #fff;
+  color: #00a9e0;
+  border-bottom: 6px solid #00a9e0; }
+  #lnb > a:last-child:hover {
+    background-color: #00a9e0;
+    color: #fff;
+    border: 0;
+    -webkit-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease; }
+
+#lnb > a:hover {
+  background-color: #cb363c;
+  outline: 0; }
+
+#theNeo {
+  width: 100%;
+  height: 700px;
+  float: left;
+  border-bottom: 6px solid #1a1a1a; }
+  #theNeo > .con_box {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 100px 20px; }
+  #theNeo > .con_box > dl {
+    width: 50%;
+    height: auto;
+    float: left; }
+    #theNeo > .con_box > dl > .new_title {
+      width: 300px;
+      height: 64px;
+      margin-bottom: 68px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #theNeo > .con_box > dl > .new_title > p {
+      font-size: 1.875rem;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: 'Noto Sans KR', "OpenSans", arial, sans-serif; }
+    #theNeo > .con_box > dl > .new_title > p:last-child {
+      font-size: 1.125rem;
+      font-size: 18px;
+      font-family: 'Shrikhand', arial, sans-serif, cursive; }
+    #theNeo > .con_box > dl > dd:first-child > span {
+      width: 310px;
+      height: 90px;
+      display: inline-block;
+      font-size: 1rem;
+      font-size: 16px; }
+    #theNeo > .con_box > dl > .new_price {
+      width: 360px;
+      height: 42px;
+      margin-top: 80px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #theNeo > .con_box > dl > .new_price > .price_large {
+        width: 160px;
+        height: inherit;
+        float: left;
+        margin-right: 40px;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #theNeo > .con_box > dl > .new_price > .price_large > .ico_large {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/large_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+      #theNeo > .con_box > dl > .new_price > .price_regular {
+        width: 160px;
+        height: inherit;
+        float: right;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #theNeo > .con_box > dl > .new_price > .price_regular > .ico_regular {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/regular_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+    #theNeo > .con_box > dl > dd:last-child {
+      width: 360px;
+      height: 78px;
+      display: inline-block;
+      margin-top: 60px; }
+      #theNeo > .con_box > dl > dd:last-child > button {
+        width: 170px;
+        height: 76px;
+        background-color: #cb363c;
+        border: 1px solid #1a1a1a;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #theNeo > .con_box > dl > dd:last-child > button > span {
+          width: 100%;
+          height: auto;
+          font-size: 1.875rem;
+          font-size: 30px; }
+        #theNeo > .con_box > dl > dd:last-child > button:hover {
+          background-color: #fff;
+          color: #cb363c;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 2px solid #cb363c;
+          -webkit-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+          transition: all 400ms ease; }
+      #theNeo > .con_box > dl > dd:last-child > .btn_wh {
+        margin-left: 14px;
+        background-color: #fff;
+        border: 1px solid #747272; }
+        #theNeo > .con_box > dl > dd:last-child > .btn_wh > .txt_wh {
+          width: 100%;
+          height: auto;
+          color: #1a1a1a;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+  #theNeo > .con_box > .img_con {
+    width: 50%;
+    height: 420px;
+    float: right;
+    margin-top: 60px;
+    background-color: transparent;
+    background-image: url("../../img/margarita.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; }
+
+#moonSet {
+  width: 100%;
+  height: 700px;
+  float: left;
+  border-bottom: 6px solid #1a1a1a; }
+  #moonSet > .con_box {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 100px 20px; }
+  #moonSet > .con_box > dl {
+    width: 50%;
+    height: auto;
+    float: left; }
+    #moonSet > .con_box > dl > .new_title {
+      width: 300px;
+      height: 64px;
+      margin-bottom: 68px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #moonSet > .con_box > dl > .new_title > p {
+      font-size: 1.875rem;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: 'Noto Sans KR', "OpenSans", arial, sans-serif; }
+    #moonSet > .con_box > dl > .new_title > p:last-child {
+      font-size: 1.125rem;
+      font-size: 18px;
+      font-family: 'Shrikhand', arial, sans-serif, cursive; }
+    #moonSet > .con_box > dl > dd:first-child > span {
+      width: 310px;
+      height: 90px;
+      display: inline-block;
+      font-size: 1rem;
+      font-size: 16px; }
+    #moonSet > .con_box > dl > .new_price {
+      width: 360px;
+      height: 42px;
+      margin-top: 80px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #moonSet > .con_box > dl > .new_price > .price_large {
+        width: 160px;
+        height: inherit;
+        float: left;
+        margin-right: 40px;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #moonSet > .con_box > dl > .new_price > .price_large > .ico_large {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/large_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+      #moonSet > .con_box > dl > .new_price > .price_regular {
+        width: 160px;
+        height: inherit;
+        float: right;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #moonSet > .con_box > dl > .new_price > .price_regular > .ico_regular {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/regular_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+    #moonSet > .con_box > dl > dd:last-child {
+      width: 360px;
+      height: 78px;
+      display: inline-block;
+      margin-top: 60px; }
+      #moonSet > .con_box > dl > dd:last-child > button {
+        width: 170px;
+        height: 76px;
+        background-color: #cb363c;
+        border: 1px solid #1a1a1a;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #moonSet > .con_box > dl > dd:last-child > button > span {
+          width: 100%;
+          height: auto;
+          font-size: 1.875rem;
+          font-size: 30px; }
+        #moonSet > .con_box > dl > dd:last-child > button:hover {
+          background-color: #fff;
+          color: #cb363c;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 2px solid #cb363c;
+          -webkit-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+          transition: all 400ms ease; }
+      #moonSet > .con_box > dl > dd:last-child > .btn_wh {
+        margin-left: 14px;
+        background-color: #fff;
+        border: 1px solid #747272; }
+        #moonSet > .con_box > dl > dd:last-child > .btn_wh > .txt_wh {
+          width: 100%;
+          height: auto;
+          color: #1a1a1a;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+  #moonSet > .con_box > .img_con {
+    width: 50%;
+    height: 420px;
+    float: right;
+    margin-top: 60px;
+    background-color: transparent;
+    background-image: url("../../img/margarita.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; }
+
+#sunSet {
+  width: 100%;
+  height: 700px;
+  float: left;
+  border-bottom: 6px solid #1a1a1a; }
+  #sunSet > .con_box {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 100px 20px; }
+  #sunSet > .con_box > dl {
+    width: 50%;
+    height: auto;
+    float: left; }
+    #sunSet > .con_box > dl > .new_title {
+      width: 300px;
+      height: 64px;
+      margin-bottom: 68px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #sunSet > .con_box > dl > .new_title > p {
+      font-size: 1.875rem;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: 'Noto Sans KR', "OpenSans", arial, sans-serif; }
+    #sunSet > .con_box > dl > .new_title > p:last-child {
+      font-size: 1.125rem;
+      font-size: 18px;
+      font-family: 'Shrikhand', arial, sans-serif, cursive; }
+    #sunSet > .con_box > dl > dd:first-child > span {
+      width: 310px;
+      height: 90px;
+      display: inline-block;
+      font-size: 1rem;
+      font-size: 16px; }
+    #sunSet > .con_box > dl > .new_price {
+      width: 360px;
+      height: 42px;
+      margin-top: 80px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #sunSet > .con_box > dl > .new_price > .price_large {
+        width: 160px;
+        height: inherit;
+        float: left;
+        margin-right: 40px;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #sunSet > .con_box > dl > .new_price > .price_large > .ico_large {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/large_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+      #sunSet > .con_box > dl > .new_price > .price_regular {
+        width: 160px;
+        height: inherit;
+        float: right;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #sunSet > .con_box > dl > .new_price > .price_regular > .ico_regular {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/regular_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+    #sunSet > .con_box > dl > dd:last-child {
+      width: 360px;
+      height: 78px;
+      display: inline-block;
+      margin-top: 60px; }
+      #sunSet > .con_box > dl > dd:last-child > button {
+        width: 170px;
+        height: 76px;
+        background-color: #cb363c;
+        border: 1px solid #1a1a1a;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #sunSet > .con_box > dl > dd:last-child > button > span {
+          width: 100%;
+          height: auto;
+          font-size: 1.875rem;
+          font-size: 30px; }
+        #sunSet > .con_box > dl > dd:last-child > button:hover {
+          background-color: #fff;
+          color: #cb363c;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 2px solid #cb363c;
+          -webkit-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+          transition: all 400ms ease; }
+      #sunSet > .con_box > dl > dd:last-child > .btn_wh {
+        margin-left: 14px;
+        background-color: #fff;
+        border: 1px solid #747272; }
+        #sunSet > .con_box > dl > dd:last-child > .btn_wh > .txt_wh {
+          width: 100%;
+          height: auto;
+          color: #1a1a1a;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+  #sunSet > .con_box > .img_con {
+    width: 50%;
+    height: 420px;
+    float: right;
+    margin-top: 60px;
+    background-color: transparent;
+    background-image: url("../../img/margarita.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; }
+
+#cheese {
+  width: 100%;
+  height: 700px;
+  float: left; }
+  #cheese > .con_box {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 100px 20px; }
+  #cheese > .con_box > dl {
+    width: 50%;
+    height: auto;
+    float: left; }
+    #cheese > .con_box > dl > .new_title {
+      width: 300px;
+      height: 64px;
+      margin-bottom: 68px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #cheese > .con_box > dl > .new_title > p {
+      font-size: 1.875rem;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: 'Noto Sans KR', "OpenSans", arial, sans-serif; }
+    #cheese > .con_box > dl > .new_title > p:last-child {
+      font-size: 1.125rem;
+      font-size: 18px;
+      font-family: 'Shrikhand', arial, sans-serif, cursive; }
+    #cheese > .con_box > dl > dd:first-child > span {
+      width: 310px;
+      height: 90px;
+      display: inline-block;
+      font-size: 1rem;
+      font-size: 16px; }
+    #cheese > .con_box > dl > .new_price {
+      width: 360px;
+      height: 42px;
+      margin-top: 80px;
+      color: #1a1a1a;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #cheese > .con_box > dl > .new_price > .price_large {
+        width: 160px;
+        height: inherit;
+        float: left;
+        margin-right: 40px;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #cheese > .con_box > dl > .new_price > .price_large > .ico_large {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/large_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+      #cheese > .con_box > dl > .new_price > .price_regular {
+        width: 160px;
+        height: inherit;
+        float: right;
+        font-size: 1.125rem;
+        font-size: 18px;
+        font-weight: bold; }
+        #cheese > .con_box > dl > .new_price > .price_regular > .ico_regular {
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 12px;
+          background-color: transparent;
+          background-image: url("../../img/regular_icon.png");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: contain; }
+    #cheese > .con_box > dl > dd:last-child {
+      width: 360px;
+      height: 78px;
+      display: inline-block;
+      margin-top: 60px; }
+      #cheese > .con_box > dl > dd:last-child > button {
+        width: 170px;
+        height: 76px;
+        background-color: #cb363c;
+        border: 1px solid #1a1a1a;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #cheese > .con_box > dl > dd:last-child > button > span {
+          width: 100%;
+          height: auto;
+          font-size: 1.875rem;
+          font-size: 30px; }
+        #cheese > .con_box > dl > dd:last-child > button:hover {
+          background-color: #fff;
+          color: #cb363c;
+          font-weight: bold;
+          border: 0;
+          border-bottom: 2px solid #cb363c;
+          -webkit-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+          transition: all 400ms ease; }
+      #cheese > .con_box > dl > dd:last-child > .btn_wh {
+        margin-left: 14px;
+        background-color: #fff;
+        border: 1px solid #747272; }
+        #cheese > .con_box > dl > dd:last-child > .btn_wh > .txt_wh {
+          width: 100%;
+          height: auto;
+          color: #1a1a1a;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+  #cheese > .con_box > .img_con {
+    width: 50%;
+    height: 420px;
+    float: right;
+    margin-top: 60px;
+    background-color: transparent;
+    background-image: url("../../img/margarita.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover; }
+
+#footBox {
+  width: 100%;
+  height: auto; }
+
+#tel {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #1d2c3a; }
+  #tel > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #tel > .box_wrap > #orderNum {
+      width: 272px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #orderNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #orderNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #orderNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #centerNum {
+      width: 368px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px;
+      border-left: 6px solid #fff;
+      border-right: 6px solid #fff; }
+      #tel > .box_wrap > #centerNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #centerNum > .inner_box > .txt {
+          width: 60px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #centerNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #marketNum {
+      width: 320px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #marketNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #marketNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #marketNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+
+#info {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 68px 0; }
+  #info > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #info > .box_wrap > h3 {
+      width: 136px;
+      height: 120px;
+      float: left;
+      margin-top: 16px;
+      margin-right: 68px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+    #info > .box_wrap > .copyright {
+      width: 552px;
+      height: 120px;
+      display: inline-block;
+      text-transform: uppercase; }
+      #info > .box_wrap > .copyright > ul {
+        width: 100%;
+        height: auto;
+        margin-bottom: 36px; }
+        #info > .box_wrap > .copyright > ul > li {
+          width: auto;
+          height: 14px;
+          float: left;
+          margin-right: 8px;
+          color: #1a1a1a;
+          font-size: 0.8125rem;
+          font-size: 13px;
+          font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > address {
+        margin-bottom: 30px;
+        font-style: normal;
+        color: #1a1a1a;
+        font-size: 0.8125rem;
+        font-size: 13px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > p {
+        color: rgba(26, 26, 26, 0.8);
+        font-size: 0.75rem;
+        font-size: 12px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #info > .box_wrap > .social {
+      width: 100px;
+      height: 40px;
+      float: right;
+      margin-top: 30px; }
+      #info > .box_wrap > .social > li {
+        width: 40px;
+        height: 40px;
+        float: left; }
+        #info > .box_wrap > .social > li:last-child {
+          float: right; }
+      #info > .box_wrap > .social > li > a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-color: transparent;
+        background-image: url("../../img/facebook_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+      #info > .box_wrap > .social > li:last-child > a {
+        background-color: transparent;
+        background-image: url("../../img/instagram_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }

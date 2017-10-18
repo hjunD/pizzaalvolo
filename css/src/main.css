@@ -1,0 +1,619 @@
+@charset "UTF-8";
+/* main.html 디자인 영역 */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Shrikhand);
+#headBox > .head_wrap > #gnb, #mainMenu, #mainMenu > .con_wrap > ul, #mainMenu > .btn_wrap > .btn_more, #mainStory > .title_wrap > .area_h, #tel > .box_wrap > #orderNum, #tel > .box_wrap > #centerNum, #tel > .box_wrap > #marketNum, #info {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#wrap {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+#headBox {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  background-color: rgba(26, 26, 26, 0.8); }
+  #headBox > .head_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #headBox > .head_wrap > h1 {
+      width: 140px;
+      height: 94px;
+      float: left;
+      margin-top: 14px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+      #headBox > .head_wrap > h1 > a {
+        width: inherit;
+        height: 94px;
+        display: block; }
+    #headBox > .head_wrap > #gnb {
+      width: 768px;
+      height: 120px;
+      float: right;
+      padding: 40px 0; }
+      #headBox > .head_wrap > #gnb > ul {
+        width: 100%;
+        height: auto; }
+        #headBox > .head_wrap > #gnb > ul > li {
+          width: auto;
+          height: auto;
+          float: left;
+          margin-right: 20px; }
+        #headBox > .head_wrap > #gnb > ul > li > a {
+          display: block; }
+        #headBox > .head_wrap > #gnb > ul > li > a > span {
+          color: #fff;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-weight: bold;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif;
+          vertical-align: middle; }
+          #headBox > .head_wrap > #gnb > ul > li > a > span:hover {
+            color: #00a9e0;
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+        #headBox > .head_wrap > #gnb > ul > li:first-child > a > span {
+          color: #00a9e0; }
+        #headBox > .head_wrap > #gnb > ul > li:last-child {
+          margin-right: 0; }
+
+#adBanner {
+  width: 100%;
+  min-width: 960px;
+  height: 600px;
+  position: relative;
+  /* padding-bottom:120px; @extend %boxsize; */ }
+  #adBanner > .btn {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 70%;
+    margin-top: -87px;
+    z-index: 300; }
+    #adBanner > .btn > button {
+      width: 84px;
+      height: 124px;
+      background-image: url("../../img/slide_btn.png"); }
+    #adBanner > .btn > .l_btn {
+      float: left;
+      margin-left: 100px;
+      background-position: top left; }
+      #adBanner > .btn > .l_btn:hover, #adBanner > .btn > .l_btn:focus {
+        background-position: bottom left; }
+    #adBanner > .btn > .r_btn {
+      float: right;
+      margin-right: 100px;
+      background-position: top right; }
+      #adBanner > .btn > .r_btn:hover, #adBanner > .btn > .r_btn:focus {
+        background-position: bottom right; }
+
+.banner_wrap {
+  width: 100%;
+  height: 600px;
+  position: relative; }
+  .banner_wrap > div {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    .banner_wrap > div.active {
+      z-index: 100; }
+  .banner_wrap .banner_img_1 {
+    background-image: url("../../img/slidePizza_1.jpg"); }
+  .banner_wrap .banner_img_2 {
+    background-image: url("../../img/slidePizza_2.jpg"); }
+  .banner_wrap .banner_img_3 {
+    background-image: url("../../img/slidePizza_3.jpg"); }
+  .banner_wrap .banner_img_4 {
+    background-image: url("../../img/slidePizza_4.jpg"); }
+  .banner_wrap .banner_img_5 {
+    background-image: url("../../img/slidePizza_5.jpg"); }
+
+.indicator {
+  width: 270px;
+  height: 30px;
+  position: absolute;
+  z-index: 300;
+  left: 50%;
+  margin-left: -136px;
+  bottom: 20px; }
+  .indicator > ol {
+    width: 100%;
+    height: 100%; }
+    .indicator > ol > li {
+      width: 40px;
+      height: 16px;
+      float: left;
+      overflow: hidden;
+      margin-right: 10px; }
+      .indicator > ol > li:last-child {
+        margin-right: 0; }
+      .indicator > ol > li > button {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(26, 26, 26, 0.8); }
+        .indicator > ol > li > button:hover, .indicator > ol > li > button:focus {
+          background-color: #005881; }
+      .indicator > ol > li.active > button {
+        background-color: #00a9e0; }
+
+@-webkit-keyframes mouseScroll {
+  0% {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    opacity: 0.4; }
+  100% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    opacity: 0.8; } }
+
+@keyframes mouseScroll {
+  0% {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    opacity: 0.4; }
+  100% {
+    -webkit-transform: translateY(1rem);
+    transform: translateY(1rem);
+    opacity: 0.8; } }
+
+#container {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  background-image: url("../../img/brickwall.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  background-attachment: fixed; }
+
+.top {
+  width: 2000px;
+  height: 4000px;
+  position: absolute;
+  top: -1500px;
+  right: 1140px;
+  background-color: #1d2c3a;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  transform: rotate(50deg); }
+
+.btm {
+  width: 4000px;
+  height: 1470px;
+  position: absolute;
+  bottom: -600px;
+  right: -300px;
+  background-color: #005881;
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); }
+
+#mainMenu {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin-bottom: 400px;
+  padding: 68px;
+  padding: 68px 3.5416667vw;
+  position: relative;
+  z-index: 100; }
+  #mainMenu > .con_wrap {
+    width: 100%;
+    min-width: 960px;
+    height: auto;
+    margin: 0 auto; }
+    #mainMenu > .con_wrap > h5 {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      margin-left: -120px;
+      margin-bottom: 68px;
+      color: #fff;
+      font-size: 2.25rem;
+      font-size: 36px;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #mainMenu > .con_wrap > ul {
+      width: inherit;
+      padding: 0 68px;
+      padding: 0 3.541667vw;
+      margin-bottom: 120px;
+      background-color: transparent; }
+      #mainMenu > .con_wrap > ul > li {
+        width: 360px;
+        width: 18.75vw;
+        height: 18.75vw;
+        float: left;
+        margin-right: 60px;
+        margin-right: 3.125vw;
+        background-color: transparent;
+        background-image: url("../../img/pizza_mainmenu.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 180px;
+        overflow: hidden; }
+        #mainMenu > .con_wrap > ul > li:last-child {
+          margin-right: 0; }
+        #mainMenu > .con_wrap > ul > li > span {
+          width: 100%;
+          height: 100%;
+          display: block;
+          text-align: center;
+          line-height: 360px;
+          line-height: 18.75vw;
+          background-color: rgba(26, 26, 26, 0.8);
+          color: #fff;
+          font-size: 1.125rem;
+          font-size: 18px;
+          font-size: 1.5vw;
+          opacity: 0; }
+        #mainMenu > .con_wrap > ul > li:hover > span {
+          opacity: 1;
+          -webkit-transition: all 400ms ease;
+          -o-transition: all 400ms ease;
+          transition: all 400ms ease; }
+  @media screen and (max-width: 1280px) {
+    #mainMenu .con_wrap {
+      width: 960px;
+      height: auto;
+      margin: 0 auto; }
+      #mainMenu .con_wrap > ul {
+        width: inherit;
+        padding: 0 68px;
+        padding: 0 3.541667vw;
+        margin-bottom: 68px;
+        background-color: transparent; }
+        #mainMenu .con_wrap > ul > li {
+          width: 360px;
+          height: 360px;
+          float: left;
+          margin-right: 120px;
+          background-color: transparent;
+          background-image: url("../../img/pizza_mainmenu.jpg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          border-radius: 180px;
+          overflow: hidden; }
+          #mainMenu .con_wrap > ul > li:nth-child(2n) {
+            margin-right: 0; } }
+  #mainMenu > .btn_wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
+    #mainMenu > .btn_wrap > .btn_more {
+      width: 130px;
+      height: 60px;
+      margin: auto;
+      padding: 12px 30px;
+      background-color: #cb363c;
+      cursor: pointer; }
+      #mainMenu > .btn_wrap > .btn_more > a {
+        width: 100px;
+        height: auto; }
+        #mainMenu > .btn_wrap > .btn_more > a > span {
+          width: 100%;
+          height: auto;
+          color: #fff;
+          font-size: 1.5rem;
+          font-size: 24px;
+          font-family: 'Shrikhand', arial, sans-serif, cursive; }
+          #mainMenu > .btn_wrap > .btn_more > a > span:hover {
+            color: #cb363c;
+            font-weight: bold; }
+      #mainMenu > .btn_wrap > .btn_more:hover {
+        background-color: #fff;
+        border: 0;
+        border-bottom: 6px solid #cb363c;
+        -webkit-transition: all 400ms ease;
+        -o-transition: all 400ms ease;
+        transition: all 400ms ease; }
+
+#mainStory {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  position: relative;
+  z-index: 100; }
+  #mainStory > .title_wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
+    #mainStory > .title_wrap > .area_h {
+      width: 650px;
+      height: 170px;
+      padding: 36px;
+      margin: auto;
+      margin-bottom: 68px;
+      background-color: rgba(26, 26, 26, 0.8);
+      color: #fff;
+      font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #mainStory > .title_wrap > .area_h > h5 {
+        width: 342px;
+        height: 40px;
+        margin-bottom: 16px;
+        font-size: 2.25rem;
+        font-size: 36px; }
+      #mainStory > .title_wrap > .area_h > p {
+        width: 696px;
+        height: 50px;
+        font-size: 1.125rem;
+        font-size: 18px; }
+  #mainStory > .story_wrap {
+    width: 100%;
+    height: auto;
+    margin: 0 auto; }
+    #mainStory > .story_wrap > .area_story {
+      width: 1000px;
+      height: 1120px;
+      margin: auto;
+      margin-bottom: 400px; }
+      #mainStory > .story_wrap > .area_story > li:first-child {
+        width: 100%;
+        height: 380px;
+        float: left;
+        background-color: transparent;
+        background-image: url("../../img/secret1.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+        #mainStory > .story_wrap > .area_story > li:first-child > a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          #mainStory > .story_wrap > .area_story > li:first-child > a:hover {
+            background-color: rgba(26, 26, 26, 0.4);
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+      #mainStory > .story_wrap > .area_story > li:nth-child(2) {
+        width: 33.333%;
+        height: 340px;
+        float: left;
+        background-color: transparent;
+        background-image: url("../../img/secret_3.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+        #mainStory > .story_wrap > .area_story > li:nth-child(2) > a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          #mainStory > .story_wrap > .area_story > li:nth-child(2) > a:hover {
+            background-color: rgba(26, 26, 26, 0.4);
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+      #mainStory > .story_wrap > .area_story > li:nth-child(3) {
+        width: 33.333%;
+        height: 340px;
+        float: left;
+        background-color: transparent;
+        background-image: url("../../img/secret_4.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+        #mainStory > .story_wrap > .area_story > li:nth-child(3) > a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          #mainStory > .story_wrap > .area_story > li:nth-child(3) > a:hover {
+            background-color: rgba(26, 26, 26, 0.4);
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+      #mainStory > .story_wrap > .area_story > li:nth-child(4) {
+        width: 33.333%;
+        height: 340px;
+        float: right;
+        background-color: transparent;
+        background-image: url("../../img/secret_5.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+        #mainStory > .story_wrap > .area_story > li:nth-child(4) > a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          #mainStory > .story_wrap > .area_story > li:nth-child(4) > a:hover {
+            background-color: rgba(26, 26, 26, 0.4);
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+      #mainStory > .story_wrap > .area_story > li:last-child {
+        width: 100%;
+        height: 380px;
+        float: left;
+        background-color: transparent;
+        background-image: url("../../img/secret7.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+        #mainStory > .story_wrap > .area_story > li:last-child > a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          #mainStory > .story_wrap > .area_story > li:last-child > a:hover {
+            background-color: rgba(26, 26, 26, 0.4);
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+
+#footBox {
+  width: 100%;
+  height: auto; }
+
+#tel {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #1d2c3a; }
+  #tel > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #tel > .box_wrap > #orderNum {
+      width: 272px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #orderNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #orderNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #orderNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #centerNum {
+      width: 368px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px;
+      border-left: 6px solid #fff;
+      border-right: 6px solid #fff; }
+      #tel > .box_wrap > #centerNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #centerNum > .inner_box > .txt {
+          width: 60px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #centerNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #marketNum {
+      width: 320px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #marketNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #marketNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #marketNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+
+#info {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 68px 0; }
+  #info > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #info > .box_wrap > h3 {
+      width: 136px;
+      height: 120px;
+      float: left;
+      margin-top: 16px;
+      margin-right: 68px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+    #info > .box_wrap > .copyright {
+      width: 552px;
+      height: 120px;
+      display: inline-block;
+      text-transform: uppercase; }
+      #info > .box_wrap > .copyright > ul {
+        width: 100%;
+        height: auto;
+        margin-bottom: 36px; }
+        #info > .box_wrap > .copyright > ul > li {
+          width: auto;
+          height: 14px;
+          float: left;
+          margin-right: 8px;
+          color: #1a1a1a;
+          font-size: 0.8125rem;
+          font-size: 13px;
+          font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > address {
+        margin-bottom: 30px;
+        font-style: normal;
+        color: #1a1a1a;
+        font-size: 0.8125rem;
+        font-size: 13px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > p {
+        color: rgba(26, 26, 26, 0.8);
+        font-size: 0.75rem;
+        font-size: 12px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #info > .box_wrap > .social {
+      width: 100px;
+      height: 40px;
+      float: right;
+      margin-top: 30px; }
+      #info > .box_wrap > .social > li {
+        width: 40px;
+        height: 40px;
+        float: left; }
+        #info > .box_wrap > .social > li:last-child {
+          float: right; }
+      #info > .box_wrap > .social > li > a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-color: transparent;
+        background-image: url("../../img/facebook_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+      #info > .box_wrap > .social > li:last-child > a {
+        background-color: transparent;
+        background-image: url("../../img/instagram_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }

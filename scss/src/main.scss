@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* main.html 디자인 영역 */
+
+@import "../base/variable";
+@import "../base/mixin";
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Shrikhand);
+
+// ---------------------------------------------------------------------------------------------------------------------
+#wrap{width: 100%; min-width: 960px; height: auto; margin: 0 auto; position: relative;}
+// .box_wrap{width: 960px; height: 100%; margin: 0 auto;}
+
+#headBox{width: 100%; height: 120px; 
+    position: absolute; top:0; left:0; z-index: 400;
+    background-color: map-get($bgc,oblk);
+    >.head_wrap{width: 960px; height: inherit; margin: 0 auto;
+        >h1{width: 140px; height: 94px; float: left; margin-top: 14px;
+            @include bg($f:"alvolo_logo.png");
+            >a{width: inherit; height: 94px; display: block;}
+        }
+        >#gnb{width: 768px; height: 120px; float: right;
+            padding: 40px 0; @extend %boxsize;
+            >ul{width: 100%; height: auto;
+                >li{width: auto; height: auto; float: left; margin-right: 20px;}
+                >li>a{display: block;}
+                >li>a>span{color: map-get($bgc,white); font-size: 1.875rem; font-size: 30px; font-weight: bold; font-family: $ff; vertical-align: middle;
+                    &:hover{color: map-get($bgc,blue); 
+                        transition: all 400ms ease;}
+                }
+                >li:first-child>a>span{color: map-get($bgc,blue);}
+                >li:last-child{margin-right: 0;}
+            }
+        }
+    }
+}
+    
+    // >#gnb{width: 880px; height: 120px; float: right;
+    //     padding: 40px 0; @extend %boxsize;
+    //     >dl{width: auto;/*width:100%*/ height: auto; float: left;
+    //         >dt{/*float: left;*/ margin-right: 32px;
+    //             >a{display: block;
+    //                 >span{color: map-get($bgc,white); font-size: 32px; font-weight: bold; font-family: $ff;}
+    //             }
+    //             &:before{content: " "; display: block; height: 0; 
+    //                 left: 0; border-bottom: 4px solid #a30; border-bottom-width: 0; 
+    //                 position: absolute; bottom: 35px; z-index: -100; 
+    //                 transition: all 300ms ease-in;}
+    //         }
+    //         >dd{ height: auto; padding-top: 16px; padding-bottom: 10px;
+    //             position: relative; transition: all 300ms ease-in;
+    //             >a{display: inline-block; width: 100%; padding: 6px; box-sizing: border-box; 
+    //                 margin-bottom: 6px;
+    //                 >span{display: inline-block; color: #fff; font-style: 20px;}
+    //             }
+    //         }
+    //     }
+    //     >dl:first-child>dt{
+    //         >a>span{color: map-get($bgc,blue); font-size: 36px; font-weight: bold; font-family: $ff;}
+    //     }
+    //     >dl:nth-child(2)>dt{}
+    //     >dl:nth-child(3)>dt{}
+    //     >dl:nth-child(4)>dt{}
+
+    //     >dl:last-child>dt{margin-right: 0;}
+    //     &:before{content: " "; display: block; 
+    //         position: absolute; z-index: -200; right: 0; top: 120px; 
+    //         background-color: rgba(170, 51, 0, 0.8); padding-left: 360px;
+    //         transition: all 150ms ease-in;}
+    // }
+
+#adBanner{width: 100%; min-width: 960px; height: 600px; 
+    position:relative; /* padding-bottom:120px; @extend %boxsize; */
+    >.btn{width: 100%; height: 0; position: absolute; top: 70%; 
+        margin-top: -87px; z-index: 300;
+        >button{width: 84px; height: 124px; 
+            // background-color: #bbb;
+            background-image: url("../../img/slide_btn.png");}
+        >.l_btn{float: left; margin-left: 100px; background-position: top left;
+            &:hover,&:focus{background-position: bottom left;}
+        }
+        >.r_btn{float: right; margin-right: 100px; background-position: top right;
+            &:hover,&:focus{background-position: bottom right;}
+        }
+    }
+}
+.banner_wrap{width: 100%; height: 600px; position: relative;
+    >div{width: 100%; height: 600px; position: absolute; z-index: 0; 
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        background-position: center;
+        &.active {z-index: 100;}
+    }
+    .banner_img_1{background-image: url("../../img/slidePizza_1.jpg");}
+    .banner_img_2{background-image: url("../../img/slidePizza_2.jpg");}
+    .banner_img_3{background-image: url("../../img/slidePizza_3.jpg");}
+    .banner_img_4{background-image: url("../../img/slidePizza_4.jpg");}
+    .banner_img_5{background-image: url("../../img/slidePizza_5.jpg");}
+} // .banner_wrap
+
+.indicator {width: 270px; height: 30px; 
+    position: absolute; z-index: 300; left: 50%; 
+    margin-left: -136px; bottom: 20px;
+    >ol{width: 100%; height: 100%;
+        >li{width: 40px; height: 16px; float: left; overflow: hidden;
+            margin-right: 10px; 
+            // border-radius: 1.875rem; 
+            &:last-child{margin-right:0;}
+            >button{width: 100%; height: 100%; background-color: map-get($bgc,oblk);
+                &:hover, &:focus {background-color: map-get($bgc,darkB);}
+            } // button
+            &.active>button{background-color: map-get($bgc,blue);}
+        } // li
+    } // ol
+} // .indicator
+
+@keyframes mouseScroll {
+    0%{ transform:translateY(-1rem); opacity:0.4;}
+    100%{ transform:translateY(1rem); opacity:0.8;}
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+#container{width: 100%; min-width: 960px; height: auto; margin: 0 auto;
+    position: relative; overflow: hidden; 
+	@include bg($f:"brickwall.jpg",$p:bottom,$s:100%); background-attachment: fixed;}
+.top{width: 2000px/*4000px*/; height: 4000px/*1470px*/; position: absolute; top: -1500px/*-1000px*/; right: 1140px; 
+	// left: -900px;
+	background-color: map-get($bgc,navy); transform:rotate(50deg/*-40deg*/);}
+.btm{width: 4000px; height: 1470px; position: absolute; bottom: -600px; right: -300px;
+	background-color: map-get($bgc,darkB); transform:rotate(30deg);}
+
+#mainMenu{
+    width: 100%; min-width: 960px; height: auto; margin-bottom: 400px; 
+    padding: 68px; padding: 68px 3.5416667vw; @extend %boxsize; 
+    position: relative; z-index: 100;
+    // width: 100%; height: auto; margin-bottom: 400px; padding: 68px; @extend %boxsize;	position: relative; z-index: 100;
+    // background-image: linear-gradient(155deg, #1d2c3a 70%, /*#1d2c3a 75%,*/ #fff 20%); 기울임박스1번째방법
+
+    >.con_wrap{width: 100%; min-width: 960px; height: auto; margin: 0 auto;
+    	>h5{width:100%; height: 50px; text-align: center;
+            // margin: auto;
+            margin-left: -120px ; margin-bottom: 68px; 
+    		color: map-get($bgc,white); font-size: 2.25rem; font-size: 36px; font-family: $ff;}
+    	>ul{width:inherit; padding: 0 68px; padding: 0 3.541667vw; 
+            @extend %boxsize; margin-bottom: 120px; 
+    		background-color: map-get($bgc,t);
+    		>li{width: 360px; width: 18.75vw; height: 18.75vw; float: left; margin-right: 60px; margin-right: 3.125vw;
+    			@include bg($f:"pizza_mainmenu.jpg",$p:center,$s:cover);
+    			 border-radius: 180px;
+                 overflow: hidden;
+    			&:last-child{margin-right: 0;}
+                >span{width: 100%; height: 100%; 
+                    display: block; text-align: center; line-height: 360px; line-height: 18.75vw; 
+                    background-color: map-get($bgc,oblk);
+                    color: map-get($bgc,white); font-size: 1.125rem; font-size: 18px; font-size:1.5vw;
+                    opacity: 0;
+                }
+                &:hover>span{opacity: 1; transition: all 400ms ease;}
+    		}
+    	}
+    }
+
+
+    @media screen and (max-width:1280px) {
+        .con_wrap{width: 960px; height: auto; margin: 0 auto;
+            >ul{width: inherit; padding: 0 68px; padding: 0 3.541667vw; 
+                 margin-bottom: 68px; 
+                background-color: map-get($bgc,t);
+                >li{width: 360px; height: 360px; float: left; margin-right: 120px;
+                    @include bg($f:"pizza_mainmenu.jpg",$p:center,$s:cover);
+                     border-radius: 180px;
+                     overflow: hidden;
+                     &:nth-child(2n){margin-right: 0;}
+                }
+            }
+        }
+    }
+
+    >.btn_wrap{width: 100%; height: auto; margin: 0 auto;
+        >.btn_more{width: 130px; height: 60px; margin: auto; 
+            padding: 12px 30px; @extend %boxsize;
+            background-color: map-get($bgc,red);
+            cursor: pointer;
+            >a{width: 100px; height: auto;
+                >span{width: 100%; height: auto; color: map-get($bgc,white); font-size: 1.5rem; font-size: 24px; font-family: 'Shrikhand', arial, sans-serif, cursive;
+                    &:hover{color: map-get($bgc,red); font-weight: bold;}
+                }
+            }
+            &:hover{background-color: map-get($bgc,white); border:0; border-bottom: 6px solid map-get($bgc,red);
+                transition: all 400ms ease;}
+        }
+    }
+}
+#mainStory{width: 100%; min-width: 960px; height: auto;
+	position: relative; z-index: 100;
+    >.title_wrap{width:100%; height: auto; margin: 0 auto;
+    	>.area_h{width: 650px; height: 170px; 
+    		padding: 36px; @extend %boxsize;
+            margin: auto; margin-bottom: 68px;
+    		background-color: map-get($bgc,oblk);
+    		color: map-get($bgc,white); font-family: $ff;
+    		>h5{width: 342px; height: 40px; margin-bottom: 16px; font-size: 2.25rem; font-size: 36px;}
+    		>p{width: 696px; height: 50px; font-size: 1.125rem; font-size: 18px;}
+    	}
+    }
+    >.story_wrap{width:100%; height: auto; margin: 0 auto;
+    	>.area_story{width: 1000px; height: 1120px; margin: auto; margin-bottom: 400px;
+    		>li:first-child{width: 100%; height: 380px; float: left;
+    						@include bg($f:"secret1.jpg");
+                >a{width: 100%; height: 100%; display: block;
+                    &:hover{background-color: rgba(map-get($bgc,oblk), 0.4);
+                        transition: all 400ms ease;}
+                }
+    		}
+    		>li:nth-child(2){width: 33.333%; height: 340px; float: left;
+    						@include bg($f:"secret_3.jpg");
+                >a{width: 100%; height: 100%; display: block;
+                    &:hover{background-color: rgba(map-get($bgc,oblk), 0.4);
+                        transition: all 400ms ease;}
+                }
+            }
+    		>li:nth-child(3){width: 33.333%; height: 340px; float: left;
+    						@include bg($f:"secret_4.jpg");
+                >a{width: 100%; height: 100%; display: block;
+                    &:hover{background-color: rgba(map-get($bgc,oblk), 0.4);
+                        transition: all 400ms ease;}
+                }
+            }
+    		>li:nth-child(4){width: 33.333%; height: 340px; float: right;
+    						@include bg($f:"secret_5.jpg");
+                >a{width: 100%; height: 100%; display: block;
+                    &:hover{background-color: rgba(map-get($bgc,oblk), 0.4);
+                        transition: all 400ms ease;}
+                }
+            }
+    		>li:last-child{width: 100%; height: 380px; float: left;
+    						@include bg($f:"secret7.jpg");
+    		    >a{width: 100%; height: 100%; display: block;
+                    &:hover{background-color: rgba(map-get($bgc,oblk), 0.4);
+                        transition: all 400ms ease;}
+                }
+            }
+    	}
+    }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------
+#footBox{width: 100%; height: auto;}
+#tel{width: 100%; height: 100px; margin: 0 auto; background-color: map-get($bgc,navy);
+    >.box_wrap{width: 960px; height: inherit; margin: 0 auto;
+        >#orderNum{width: 272px; height: inherit; float: left; padding: 30px 20px; @extend %boxsize;
+            // background-color: brown;
+            >.inner_box{width: 100%; height: auto; color: map-get($bgc,white); font-family: $ff;
+                >.txt{width: 40px; height: 40px; float: left; font-size: 1.125rem; font-size: 18px;}
+                >a{float: right; margin-top: 6px; font-size: 1.875rem; font-size: 30px;}
+            }
+        }
+        >#centerNum{width: 368px; height: inherit; float: left; padding: 30px 20px; @extend %boxsize;
+            // background-color: green; 
+            border-left: 6px solid map-get($bgc,white); border-right: 6px solid map-get($bgc,white);
+            >.inner_box{width: 100%; height: auto; color: map-get($bgc,white); font-family: $ff;
+                >.txt{width: 60px; height: 40px; float: left; font-size: 1.125rem; font-size: 18px;}
+                >a{float: right; margin-top: 6px; font-size: 1.875rem; font-size: 30px;}
+            }
+        }
+        >#marketNum{width: 320px; height: inherit; float: left; padding: 30px 20px; @extend %boxsize;
+            // background-color: orange;
+            >.inner_box{width: 100%; height: auto; color: map-get($bgc,white); font-family: $ff;
+                >.txt{width: 40px; height: 40px; float: left; font-size: 1.125rem; font-size: 18px;}
+                >a{float: right; margin-top: 6px; font-size: 1.875rem; font-size: 30px;}
+            }
+        }
+    }
+}
+#info{width: 100%; height: 300px; margin: 0 auto; padding: 68px 0; @extend %boxsize;
+    >.box_wrap{width: 960px; height: inherit; margin: 0 auto;
+        >h3{width: 136px; height: 120px; float: left; 
+            margin-top: 16px; margin-right: 68px;
+            @include bg($f:"alvolo_logo.png");}
+        >.copyright{width: 552px; height: 120px; display: inline-block; text-transform: uppercase;
+            >ul{width: 100%; height: auto; margin-bottom: 36px;
+                >li{width: auto; height: 14px; float: left; margin-right: 8px; 
+                    color: map-get($bgc,black); font-size: 0.8125rem; font-size: 13px; font-family: "Noto Sans KR", "OpenSans", arial, sans-serif;}
+            }
+            >address{margin-bottom: 30px; font-style: normal;
+                color: map-get($bgc,black); font-size: 0.8125rem; font-size: 13px; font-family: "Noto Sans KR", "OpenSans", arial, sans-serif;}
+            >p{color: map-get($bgc,oblk); font-size: 0.75rem; font-size: 12px; font-family: "Noto Sans KR", "OpenSans", arial, sans-serif;}
+        }
+        >.social{width: 100px; height: 40px; float: right; margin-top: 30px;
+            >li{width: 40px; height: 40px; float: left;
+                &:last-child{float: right;}
+            }
+            >li>a{width: 40px; height: 40px; display: inline-block; @include bg($f:"facebook_logo.png");}
+            >li:last-child>a{@include bg($f:"instagram_logo.png");}
+        }
+    }
+}

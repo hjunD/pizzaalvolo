@@ -1,0 +1,376 @@
+@charset "UTF-8";
+/* sub_event.html 디자인 영역 */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Shrikhand);
+#headBox > .head_wrap > #gnb, #titleArea, #eventBox > dl > dt, #eventBox > dl > .event_view, #eventBox > dl > .event_txt, #eventBox > dl > .event_txt > .event_title:hover, .paging > li, .paging > li > span, #tel > .box_wrap > #orderNum, #tel > .box_wrap > #centerNum, #tel > .box_wrap > #marketNum, #info {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#wrap {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+#headBox {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(26, 26, 26, 0.8); }
+  #headBox > .head_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #headBox > .head_wrap > h1 {
+      width: 140px;
+      height: 94px;
+      float: left;
+      margin-top: 14px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+      #headBox > .head_wrap > h1 > a {
+        width: inherit;
+        height: 94px;
+        display: block; }
+    #headBox > .head_wrap > #gnb {
+      width: 768px;
+      height: 120px;
+      float: right;
+      padding: 40px 0; }
+      #headBox > .head_wrap > #gnb > ul {
+        width: 100%;
+        height: auto; }
+        #headBox > .head_wrap > #gnb > ul > li {
+          width: auto;
+          height: auto;
+          float: left;
+          margin-right: 20px; }
+        #headBox > .head_wrap > #gnb > ul > li > a {
+          display: block; }
+        #headBox > .head_wrap > #gnb > ul > li > a > span {
+          color: #fff;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-weight: bold;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif;
+          vertical-align: middle; }
+          #headBox > .head_wrap > #gnb > ul > li > a > span:hover {
+            color: #00a9e0;
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+        #headBox > .head_wrap > #gnb > ul > li:first-child > a > span {
+          color: #00a9e0; }
+        #headBox > .head_wrap > #gnb > ul > li:last-child {
+          margin-right: 0; }
+
+#adBanner {
+  width: 100%;
+  min-width: 960px;
+  height: 620px;
+  position: relative;
+  background-color: transparent;
+  background-image: url("../../img/pizza_big.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#titleArea {
+  width: 70%;
+  height: 500px;
+  position: absolute;
+  top: 120px;
+  padding: 300px 0 0 160px; }
+  #titleArea > .title {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 4.5rem;
+    font-size: 72px;
+    font-weight: bold;
+    font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+
+#container {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  background-color: transparent;
+  background-image: url("../../img/white_wall.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover; }
+
+#container > .con_wrap {
+  width: 960px;
+  height: 1100px;
+  margin: 0 auto; }
+
+#container > .ul_wrap {
+  width: 960px;
+  height: 50px;
+  margin: 0 auto; }
+
+#eventBox {
+  width: 800px;
+  height: 1100px;
+  float: left;
+  margin-top: 280px;
+  margin-bottom: 240px;
+  margin-left: 80px; }
+
+#eventBox > dl {
+  width: 100%;
+  height: auto;
+  color: #fff;
+  font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+  #eventBox > dl > dt {
+    width: 100%;
+    height: 84px;
+    float: left;
+    padding-left: 36px;
+    padding-top: 20px;
+    background-color: #cb363c;
+    border: 3px solid #fff;
+    font-size: 40px; }
+  #eventBox > dl > .event_view {
+    width: 790px;
+    height: 1000px;
+    float: left;
+    margin-bottom: 10px;
+    padding: 30px 90px;
+    background-color: rgba(252, 245, 245, 0.3);
+    border-bottom: 6px solid #1a1a1a; }
+  #eventBox > dl > .event_view > .img_event {
+    width: 766px;
+    height: 1090px;
+    background-color: transparent;
+    background-image: url("../../img/event_handpizza.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 80%; }
+  #eventBox > dl > .event_txt {
+    width: 790px;
+    height: 140px;
+    float: left;
+    padding-left: 50px;
+    padding-top: 30px;
+    background-color: rgba(26, 26, 26, 0.8); }
+  #eventBox > dl > .event_txt > .event_title {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: bold; }
+    #eventBox > dl > .event_txt > .event_title:hover {
+      border-left: 3px solid #747272;
+      color: #00a9e0;
+      -webkit-transition: all 400ms ease-in;
+      -o-transition: all 400ms ease-in;
+      transition: all 400ms ease-in; }
+  #eventBox > dl > .event_txt > span {
+    float: left;
+    font-size: 22px; }
+
+.paging {
+  float: left;
+  margin: 0 348px;
+  margin-bottom: 300px; }
+
+.paging > li {
+  width: 36px;
+  height: 36px;
+  float: left;
+  margin-left: 40px;
+  padding: 2px 8px;
+  border-radius: 18px;
+  background-color: #00a9e0;
+  color: #fff;
+  font-size: 28px;
+  font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+  .paging > li:hover {
+    background-color: #1d2c3a;
+    -webkit-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease; }
+
+.paging > li > a {
+  width: 100%;
+  height: auto; }
+
+.paging > li > a:hover {
+  color: #fff;
+  border-bottom: 3px solid #fff; }
+
+.paging > li > span {
+  width: 100%;
+  height: auto;
+  padding: 4px; }
+
+.paging > li:first-child {
+  margin-left: 0;
+  background-color: #1d2c3a; }
+
+#footBox {
+  width: 100%;
+  height: auto; }
+
+#tel {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #1d2c3a; }
+  #tel > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #tel > .box_wrap > #orderNum {
+      width: 272px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #orderNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #orderNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #orderNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #centerNum {
+      width: 368px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px;
+      border-left: 6px solid #fff;
+      border-right: 6px solid #fff; }
+      #tel > .box_wrap > #centerNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #centerNum > .inner_box > .txt {
+          width: 60px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #centerNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #marketNum {
+      width: 320px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #marketNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #marketNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #marketNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+
+#info {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 68px 0; }
+  #info > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #info > .box_wrap > h3 {
+      width: 136px;
+      height: 120px;
+      float: left;
+      margin-top: 16px;
+      margin-right: 68px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+    #info > .box_wrap > .copyright {
+      width: 552px;
+      height: 120px;
+      display: inline-block;
+      text-transform: uppercase; }
+      #info > .box_wrap > .copyright > ul {
+        width: 100%;
+        height: auto;
+        margin-bottom: 36px; }
+        #info > .box_wrap > .copyright > ul > li {
+          width: auto;
+          height: 14px;
+          float: left;
+          margin-right: 8px;
+          color: #1a1a1a;
+          font-size: 0.8125rem;
+          font-size: 13px;
+          font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > address {
+        margin-bottom: 30px;
+        font-style: normal;
+        color: #1a1a1a;
+        font-size: 0.8125rem;
+        font-size: 13px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > p {
+        color: rgba(26, 26, 26, 0.8);
+        font-size: 0.75rem;
+        font-size: 12px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #info > .box_wrap > .social {
+      width: 100px;
+      height: 40px;
+      float: right;
+      margin-top: 30px; }
+      #info > .box_wrap > .social > li {
+        width: 40px;
+        height: 40px;
+        float: left; }
+        #info > .box_wrap > .social > li:last-child {
+          float: right; }
+      #info > .box_wrap > .social > li > a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-color: transparent;
+        background-image: url("../../img/facebook_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+      #info > .box_wrap > .social > li:last-child > a {
+        background-color: transparent;
+        background-image: url("../../img/instagram_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }

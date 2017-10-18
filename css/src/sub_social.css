@@ -1,0 +1,378 @@
+@charset "UTF-8";
+/* sub_social.html 디자인 영역 */
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(https://fonts.googleapis.com/css?family=Shrikhand);
+#headBox > .head_wrap > #gnb, #titleArea, .box_wrap > .area_h, .box_wrap > .area_h > h4:hover, .box_wrap > #campaign > dl > dt, .box_wrap > #campaign > dl > dt > button:hover, .box_wrap > #campaign > dl > dd, #tel > .box_wrap > #orderNum, #tel > .box_wrap > #centerNum, #tel > .box_wrap > #marketNum, #info {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#wrap {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  position: relative; }
+
+#headBox {
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(26, 26, 26, 0.8); }
+  #headBox > .head_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #headBox > .head_wrap > h1 {
+      width: 140px;
+      height: 94px;
+      float: left;
+      margin-top: 14px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+      #headBox > .head_wrap > h1 > a {
+        width: inherit;
+        height: 94px;
+        display: block; }
+    #headBox > .head_wrap > #gnb {
+      width: 768px;
+      height: 120px;
+      float: right;
+      padding: 40px 0; }
+      #headBox > .head_wrap > #gnb > ul {
+        width: 100%;
+        height: auto; }
+        #headBox > .head_wrap > #gnb > ul > li {
+          width: auto;
+          height: auto;
+          float: left;
+          margin-right: 20px; }
+        #headBox > .head_wrap > #gnb > ul > li > a {
+          display: block; }
+        #headBox > .head_wrap > #gnb > ul > li > a > span {
+          color: #fff;
+          font-size: 1.875rem;
+          font-size: 30px;
+          font-weight: bold;
+          font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif;
+          vertical-align: middle; }
+          #headBox > .head_wrap > #gnb > ul > li > a > span:hover {
+            color: #00a9e0;
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+        #headBox > .head_wrap > #gnb > ul > li:first-child > a > span {
+          color: #00a9e0; }
+        #headBox > .head_wrap > #gnb > ul > li:last-child {
+          margin-right: 0; }
+
+#adBanner {
+  width: 100%;
+  min-width: 960px;
+  height: 620px;
+  position: relative;
+  background-color: transparent;
+  background-image: url("../../img/pizza_social.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#titleArea {
+  width: 70%;
+  height: 500px;
+  position: absolute;
+  top: 120px;
+  padding: 300px 0 0 160px; }
+  #titleArea > .title {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+
+#container {
+  width: 100%;
+  min-width: 960px;
+  height: auto;
+  margin: 0 auto;
+  background-color: transparent;
+  background-image: url("../../img/abstract_blue.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
+
+.box_wrap {
+  width: 960px;
+  height: 1420px;
+  margin: 0 auto; }
+  .box_wrap > .area_h {
+    width: 960px;
+    height: 190px;
+    padding: 36px 60px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    background-color: rgba(26, 26, 26, 0.8);
+    color: #fff;
+    font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    .box_wrap > .area_h > h4 {
+      width: 440px;
+      height: 40px;
+      margin-bottom: 16px;
+      font-size: 36px; }
+      .box_wrap > .area_h > h4:hover {
+        border-left: 3px solid #747272;
+        color: #00a9e0;
+        -webkit-transition: all 400ms ease-in;
+        -o-transition: all 400ms ease-in;
+        transition: all 400ms ease-in; }
+    .box_wrap > .area_h > p {
+      width: 440px;
+      height: 50px;
+      font-size: 18px; }
+  .box_wrap > #campaign {
+    width: 100%;
+    min-width: 960px;
+    height: auto;
+    min-height: 600px;
+    background-color: transparent;
+    float: left; }
+    .box_wrap > #campaign > dl {
+      width: 100%;
+      height: auto; }
+      .box_wrap > #campaign > dl > dt {
+        width: 100%;
+        height: 80px;
+        padding: 22px 30px;
+        margin-bottom: 3px;
+        background-color: #cb363c;
+        border: 3px solid #fff;
+        -webkit-transition: all 400s ease-out;
+        -o-transition: all 400s ease-out;
+        transition: all 400s ease-out; }
+        .box_wrap > #campaign > dl > dt > button {
+          line-height: 36px;
+          color: #fff;
+          font-size: 32px;
+          font-family: 'Shrikhand', arial, sans-serif, cursive; }
+          .box_wrap > #campaign > dl > dt > button:hover {
+            border-bottom: 3px solid #fff;
+            -webkit-transition: all 400ms ease;
+            -o-transition: all 400ms ease;
+            transition: all 400ms ease; }
+        .box_wrap > #campaign > dl > dt > i {
+          float: right;
+          margin-right: 10px;
+          line-height: 30px;
+          font-size: 32px;
+          color: #fff; }
+      .box_wrap > #campaign > dl > dd {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3px;
+        padding: 70px 90px;
+        background-color: #fdf6f6;
+        border-bottom: 6px solid #1a1a1a; }
+        .box_wrap > #campaign > dl > dd > .img_cam {
+          width: 360px;
+          height: 360px;
+          float: right;
+          background-color: transparent;
+          background-image: url("../../img/pizza_thumbimg.jpg");
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: cover; }
+          .box_wrap > #campaign > dl > dd > .img_cam:hover {
+            background-color: transparent;
+            background-image: url("../../img/pizza_thumbimg.jpg");
+            background-repeat: no-repeat;
+            background-position: -110px 0;
+            background-size: cover;
+            -webkit-transition: all 800ms linear;
+            -o-transition: all 800ms linear;
+            transition: all 800ms linear; }
+        .box_wrap > #campaign > dl > dd > span {
+          float: left;
+          color: #1a1a1a;
+          font-family: 'Noto Sans KR', 'OpenSans', arial, sans-serif; }
+          .box_wrap > #campaign > dl > dd > span:nth-child(2) {
+            font-size: 32px;
+            font-weight: bold; }
+          .box_wrap > #campaign > dl > dd > span:nth-child(3) {
+            font-size: 20px;
+            font-weight: bold; }
+          .box_wrap > #campaign > dl > dd > span:nth-child(4) {
+            margin-top: 68px;
+            font-size: 16px;
+            color: #747272; }
+          .box_wrap > #campaign > dl > dd > span:last-child {
+            margin-top: 20px;
+            font-size: 16px; }
+
+/* jquery addClass 요소 */
+.rotateArrow {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+#footBox {
+  width: 100%;
+  height: auto; }
+
+#tel {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto;
+  background-color: #1d2c3a; }
+  #tel > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #tel > .box_wrap > #orderNum {
+      width: 272px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #orderNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #orderNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #orderNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #centerNum {
+      width: 368px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px;
+      border-left: 6px solid #fff;
+      border-right: 6px solid #fff; }
+      #tel > .box_wrap > #centerNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #centerNum > .inner_box > .txt {
+          width: 60px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #centerNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+    #tel > .box_wrap > #marketNum {
+      width: 320px;
+      height: inherit;
+      float: left;
+      padding: 30px 20px; }
+      #tel > .box_wrap > #marketNum > .inner_box {
+        width: 100%;
+        height: auto;
+        color: #fff;
+        font-family: "NanumSquare", "Noto Sans KR", "OpenSans", arial, sans-serif; }
+        #tel > .box_wrap > #marketNum > .inner_box > .txt {
+          width: 40px;
+          height: 40px;
+          float: left;
+          font-size: 1.125rem;
+          font-size: 18px; }
+        #tel > .box_wrap > #marketNum > .inner_box > a {
+          float: right;
+          margin-top: 6px;
+          font-size: 1.875rem;
+          font-size: 30px; }
+
+#info {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 68px 0; }
+  #info > .box_wrap {
+    width: 960px;
+    height: inherit;
+    margin: 0 auto; }
+    #info > .box_wrap > h3 {
+      width: 136px;
+      height: 120px;
+      float: left;
+      margin-top: 16px;
+      margin-right: 68px;
+      background-color: transparent;
+      background-image: url("../../img/alvolo_logo.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain; }
+    #info > .box_wrap > .copyright {
+      width: 552px;
+      height: 120px;
+      display: inline-block;
+      text-transform: uppercase; }
+      #info > .box_wrap > .copyright > ul {
+        width: 100%;
+        height: auto;
+        margin-bottom: 36px; }
+        #info > .box_wrap > .copyright > ul > li {
+          width: auto;
+          height: 14px;
+          float: left;
+          margin-right: 8px;
+          color: #1a1a1a;
+          font-size: 0.8125rem;
+          font-size: 13px;
+          font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > address {
+        margin-bottom: 30px;
+        font-style: normal;
+        color: #1a1a1a;
+        font-size: 0.8125rem;
+        font-size: 13px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+      #info > .box_wrap > .copyright > p {
+        color: rgba(26, 26, 26, 0.8);
+        font-size: 0.75rem;
+        font-size: 12px;
+        font-family: "Noto Sans KR", "OpenSans", arial, sans-serif; }
+    #info > .box_wrap > .social {
+      width: 100px;
+      height: 40px;
+      float: right;
+      margin-top: 30px; }
+      #info > .box_wrap > .social > li {
+        width: 40px;
+        height: 40px;
+        float: left; }
+        #info > .box_wrap > .social > li:last-child {
+          float: right; }
+      #info > .box_wrap > .social > li > a {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        background-color: transparent;
+        background-image: url("../../img/facebook_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }
+      #info > .box_wrap > .social > li:last-child > a {
+        background-color: transparent;
+        background-image: url("../../img/instagram_logo.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: contain; }

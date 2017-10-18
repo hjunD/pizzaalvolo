@@ -1,0 +1,10 @@
+@charset "utf-8";
+// mixin.scss
+
+@mixin bg($c:transparent,$u:$url,$f:none,$p:0 0,$s:contain){
+            background-color:$c;
+            background-image:url($u+$f);
+            background-repeat:no-repeat;
+            background-position:$p;
+            background-size:$s;
+}
