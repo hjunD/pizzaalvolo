@@ -7,9 +7,6 @@
 **/*.ai
 **/*.eps
 
-file/
-portfolio/.gitignore
-
 # prepros 파일 제한
 **/*.config
 
