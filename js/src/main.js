@@ -17,13 +17,13 @@
   var autoMove;
 // ---------------------------------------------------
 // 좌,우 버튼을 클릭해서 배너 이동 처리
-  rBtn.on('click',function() {
-    BtnEnd(i++);
-  });
+  // rBtn.on('click',function() {
+  //   BtnEnd(i++);
+  // });
 
-  lBtn.on('click',function() {
-    BtnEnd(i--);
-  });
+  // lBtn.on('click',function() {
+  //   BtnEnd(i--);
+  // });
 
 // indicator 클릭 
 indicatorLi.on('click',function(e) {
@@ -55,7 +55,7 @@ function SetIn(){
   autoMove = setInterval( 
     function(){ 
       ++i;
-      if(i >= 5){
+      if(i > 5){
         i = 0;
       }
       console.log(i);
