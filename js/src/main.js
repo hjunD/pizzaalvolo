@@ -12,10 +12,18 @@
   var bgBanner     = $('.banner_wrap');
   var bgBannerList = bgBanner.children();
 // 기타 설정
-  var i            = 1;
-  var timed        = 7000;
+  var i            = 0;
+  var timed        = 4000;
   var autoMove;
 // ---------------------------------------------------
+// 좌,우 버튼을 클릭해서 배너 이동 처리
+  rBtn.on('click',function() {
+    BtnEnd(i++);
+  });
+
+  lBtn.on('click',function() {
+    BtnEnd(i--);
+  });
 
 // indicator 클릭 
 indicatorLi.on('click',function(e) {
@@ -27,6 +35,7 @@ indicatorLi.on('click',function(e) {
 
   BannerAll(index);
 });
+
 // ---------------------------------------------------
 // 사용 기능 함수처리
 function BannerAll(index){
